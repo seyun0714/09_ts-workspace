@@ -69,3 +69,17 @@ tuple1 = [1, 'hello', true]; // 올바른 할당
 // tuple = [1, 'hello', true, 42]; // 오류: 요소 개수 불일치
 
 let tuple2: [string, number] = ['age', 30]; // 선언과 동시에 초기화 가능
+
+/*
+
+  [true, 'hello', 1]
+  [true, 'hello', 1, 2]
+  [true, 'hello', 1, 2, 3]
+  [true, 'hello', 1, 2,3, 숫자들...]
+  // 모두 허용할수 있는 타입
+  */
+let tuple3: [boolean, string, ...number[]];
+tuple3 = [true, 'hello', 1];
+console.log(tuple3);
+tuple3 = [true, 'hello', 1, 2, 3, 4, 5];
+console.log(tuple3);
