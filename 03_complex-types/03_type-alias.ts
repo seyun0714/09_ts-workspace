@@ -81,8 +81,8 @@ let person2: Person = {
 };
 
 type ApiKey = {
-  apiName: string;
-  apiKey: string;
+  readonly apiName: string;
+  readonly apiKey: string;
 };
 
 let kakaoApi: ApiKey = {
