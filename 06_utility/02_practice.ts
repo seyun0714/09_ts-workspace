@@ -134,7 +134,7 @@ ProductCard(product);
 // -----------------------------------------------------------------
 
 // 풀기 5: 여기에 타입을 정의해 보세요
-type ProductInventory = Record<number, number | null>;
+type ProductInventory = Record<Product['id'], Product['stock']>;
 
 // 테스트코드 5
 // ✅ 통과되어야 하는 코드
